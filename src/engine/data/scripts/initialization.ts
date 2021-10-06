@@ -1,4 +1,5 @@
 import {
+    DebugLog,
     HorizontalAlign,
     ScreenAspectRatio,
     Script,
@@ -20,9 +21,19 @@ export function initialization(): Script {
         true
     )
 
+    const spawnOrder = 0
+
+    const updateSequential = [DebugLog(42), true]
+
     return {
         preprocess: {
             code: preprocess,
+        },
+        spawnOrder: {
+            code: spawnOrder,
+        },
+        updateSequential: {
+            code: updateSequential,
         },
     }
 }
