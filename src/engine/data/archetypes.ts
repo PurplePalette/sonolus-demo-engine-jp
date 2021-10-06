@@ -10,5 +10,6 @@ export const archetypes = defineArchetypes({
     },
     note: {
         script: scripts.noteIndex,
+        input: true,
     },
 })
