@@ -5,4 +5,7 @@ export const archetypes = defineArchetypes({
     initialization: {
         script: scripts.initializationIndex,
     },
+    stage: {
+        script: scripts.stageIndex,
+    },
 })
