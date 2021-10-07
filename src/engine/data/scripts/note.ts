@@ -7,9 +7,12 @@ import {
     Greater,
     GreaterOr,
     InputAccuracy,
+    InputBucket,
+    InputBucketValue,
     InputJudgment,
     InputOffset,
     Judge,
+    Multiply,
     Not,
     Or,
     Pointer,
@@ -22,6 +25,7 @@ import {
     TouchST,
     TouchStarted,
 } from 'sonolus.js'
+import { buckets } from '../buckets'
 
 class EntityDataPointer extends Pointer {
     public get time() {
@@ -71,6 +75,9 @@ export function note(): Script {
                 )
             ),
             InputAccuracy.set(Subtract(TouchST, InputOffset, EntityData.time)),
+
+            InputBucket.set(buckets.noteIndex),
+            InputBucketValue.set(Multiply(1000, InputAccuracy)),
         ]
     )
 
