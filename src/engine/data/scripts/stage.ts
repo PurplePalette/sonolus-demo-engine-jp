@@ -1,4 +1,4 @@
-import { EffectClip } from 'sonolus-core'
+import { EffectClip, SkinSprite } from 'sonolus-core'
 import {
     And,
     Draw,
@@ -12,7 +12,7 @@ import {
     Play,
     ScreenAspectRatio,
     Script,
-    SkinSprite,
+    // SkinSprite,
     State,
     TemporaryMemory,
     TouchEnded,

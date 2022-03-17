@@ -1,4 +1,4 @@
-import { EffectClip } from 'sonolus-core'
+import { EffectClip, SkinSprite, ParticleEffect } from 'sonolus-core'
 import {
     Add,
     And,
@@ -18,13 +18,13 @@ import {
     Multiply,
     Not,
     Or,
-    ParticleEffect,
+    // ParticleEffect,
     Play,
     Pointer,
     Random,
     Remap,
     Script,
-    SkinSprite,
+    // SkinSprite,
     SpawnParticleEffect,
     Subtract,
     TemporaryMemory,
